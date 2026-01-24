@@ -1,36 +1,28 @@
-package corejavaprograms;
+package Arrays;
+import java.lang.*;
+import java.io.*;
 
-public class test02 {
 
-	public static void main(String[] args) {
+public class Test02 {
 
-		// print() – prints in same line
-		System.out.print("Nipura technologies ");
-		System.out.print("Vijayawada ");
-		System.out.print("Java batch");
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		int a[],n,i;
+		a=new int[100];
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("enter size of array");
+		n=Integer.parseInt(br.readLine());
+		for(i=0;i<n;i++) {
+			a[i]=Integer.parseInt(br.readLine());
+		}
+		for(i=0;i<n;i++) {
+		System.out.print(" " +a[i]);
+		}
+		System.out.println();
+		
+		
 
-		System.out.println(); // line break
-
-		// println() – prints in new line
-		System.out.println("Nipura technologies");
-		System.out.println("Vijayawada");
-		System.out.println("Java batch");
-
-		// \t – tab space
-		System.out.print("\tNipura technologies");
-		System.out.print("\tVijayawada");
-		System.out.print("\tJava batch");
-
-		System.out.println(); // line break
-
-		// printf() – formatted output
-		System.out.printf("%s\n", "Nipura technologies");
-		System.out.printf("%s\n", "Vijayawada");
-		System.out.printf("%s\n", "Java batch");
-
-		// \n – new line
-		System.out.print("\nNipura technologies");
-		System.out.print("\nVijayawada");
-		System.out.print("\nJava batch");
 	}
+
 }
