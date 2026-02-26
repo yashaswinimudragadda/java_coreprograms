@@ -1,0 +1,17 @@
+package javacorepragrams;
+
+public class Test {
+	public static void main(String args[])
+	{
+
+		int a=4;
+		int b=3;
+		int c=0;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("the value of a is 4 but after swap="+a+"the value of b is 3  but after swap="+b);
+		
+	}
+
+}
