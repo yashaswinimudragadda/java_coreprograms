@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.lang.*;
+import java .io.*;
+public class test
+{
+  public static void main(String[] args) {
+
+    Scanner sc=new Scanner (System.in);
+
+    System.out.print("enter the number(n): ");
+    int n=sc.nextInt();
+    int c=0;
+    int s=0;
+    
+
+
+    while(n>0){
+        int temp=0;
+        temp=n%10;
+        s=s+temp;
+        n=n/10; 
+        c=c+1;      
+    }
+ 
+    System.out.print(s+" is the sum of the numbers.");
+    System.out.print(c+" is the count of digits.");
+
+    sc.close();
+
+    }
+}
