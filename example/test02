@@ -1,0 +1,23 @@
+public class test
+{
+	public static void main(String args[])
+{
+    // printing string values and char values
+  String ecode ="e101";
+  int eno=101;
+  String ename="Anil";
+  double esal=45567.75;
+  float epf=4555.75f;
+  char egrade='a';
+  boolean ews=true;
+  System.out.println("Ecode="+ecode);
+	System.out.println("Eno="+eno);
+	System.out.println("Ename="+ename);
+	System.out.println("Esal="+esal);
+	System.out.println("Epf="+epf);
+	System.out.println("Egrade="+egrade);
+	System.out.println("EWS="+ews);
+
+
+}
+}
