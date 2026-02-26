@@ -1,0 +1,20 @@
+public class test
+{
+	public static void main(String args[])
+{
+    // printing string values and char values
+    String bcode="B101";
+    int bno=101;
+    float bprice=454.75f;
+    String bname="Unix";
+    char bpcode='u';
+    System.out.println("Code= "+bcode);
+    System.out.println("Number= "+bno);
+    System.out.println("price = "+bprice);
+    System.out.println("name= "+bname);
+    System.out.println("bpcode= "+bpcode);
+
+
+
+}
+}
