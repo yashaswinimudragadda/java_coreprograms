@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.lang.*;
+import java .io.*;
+public class test
+{
+  public static void main(String[] args) {
+
+    Scanner sc=new Scanner (System.in);
+
+    System.out.print("enter the number(n): ");
+    int n=sc.nextInt();
+
+    int i=1;
+    while(i<=n){
+        if(i%2==0 && i%8 ==0){
+           System.out.println("fizzbuzz");           
+        }
+        else if(i%2==0 ){
+             System.out.println("fizz");
+        }
+        else if(i%8==0){
+             System.out.println("buzz");
+        }
+        else{
+             System.out.println(i);
+        }
+        i++;
+    }
+    
+    sc.close();
+
+    }
+}
