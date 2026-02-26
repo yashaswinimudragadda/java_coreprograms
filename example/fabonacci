@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.lang.*;
+import java .io.*;
+public class test
+{
+  public static void main(String[] args) {
+
+    Scanner sc=new Scanner (System.in);
+
+    System.out.print("enter the number(n): ");
+    int n=sc.nextInt();
+
+    int a=0;
+    int b=1;
+    int next;
+    int i=0;
+    while(i<n){
+        System.out.print(a+ " ");
+        next=a+b;
+        b=next;
+        a=b;
+        i++;
+    }
+ 
+    
+
+    sc.close();
+
+    }
+}
