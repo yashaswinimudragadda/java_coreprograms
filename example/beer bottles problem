@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.lang.*;
+import java .io.*;
+public class test
+{
+  public static void main(String[] args) {
+
+    Scanner sc=new Scanner (System.in);
+
+    System.out.print("enter the number(n): ");
+    int n=sc.nextInt();
+
+
+    int i=99;
+    while(i<n && i>0){
+        System.out.println(i+"bottles of beer on the wall,"+i+"bottles of beer.");
+    System.out.println("bottles of beer.");
+      i--;
+
+    }
+      System.out.println("No more bottles of beer on the wall, No bottles of beer.");
+    System.out.println("Go to the store and buy some more,");
+  
+
+  
+   
+    
+    sc.close();
+
+    }
+}
