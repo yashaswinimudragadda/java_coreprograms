@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Collections; // Don't forget the 's'!
+
+class Main {
+    public static void main(String[] args) {
+       ArrayList<String> list = new ArrayList<>();
+       list.add("cat");
+       list.add("mat");
+       list.add("basket");
+       list.add("rat");
+       list.add("ball");
+       int var=0;
+       while(list.size()>var){
+           System.out.println(list.get(var));
+           var++;
+       }
+    }
+}
