@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Collections; // Don't forget the 's'!
+import java.util.Iterator;
+
+class Main {
+    public static void main(String[] args) {
+       ArrayList<String> list = new ArrayList<>();
+       list.add("cat");
+       list.add("mat");
+       list.add("basket");
+       list.add("rat");
+       list.add("ball");
+       
+       Iterator<String> iterator = list.iterator();
+       while(iterator.hasNext()){
+           System.out.println(iterator.next());
+       }
+    }
+}
