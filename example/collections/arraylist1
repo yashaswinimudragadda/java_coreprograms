@@ -1,0 +1,37 @@
+import java.lang.*;
+import java.util.*;
+class Test{
+    public static void main(String args[]){
+        ArrayList <String> At = new ArrayList <String>();
+        System.out.println(At);
+        System.out.println(At.size());
+        At.add("pen");
+        At.add("pencil");
+        At.add("books");
+        At.add("eraser");
+        System.out.println(At);
+        System.out.println(At.size());
+        At.add("apple");
+        At.add("Mango");
+        At.add("book");
+        At.add(null);
+        System.out.println(At);
+        System.out.println(At.size());// arraylist allows null values
+        At.remove("apple");
+        System.out.println(At);
+        System.out.println(At.size());
+        At.clear();
+        System.out.println(At);
+        System.out.println(At.size());
+         
+         
+         ArrayList<String> at= new ArrayList<String>();
+         at.add("viru");
+         at.add("saurav");
+         at.add("arun");
+         at.add("tahir");
+         Collections.sort(at); // sorting in arraylist by alphabetic order
+         System.out.println(at);
+        
+    }
+}
