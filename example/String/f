@@ -1,0 +1,15 @@
+
+import java.util.*;
+import java.lang.*;
+
+public class Test52 {
+    public static void main(String args[]) {
+        String str1 = "liril";
+        System.out.println("Str1 = " + str1);
+        
+        // Use StringBuilder to access the reverse() method
+        String reversed = new StringBuilder(str1).reverse().toString();
+        
+        System.out.println("Reversed = " + reversed);
+    }
+}
