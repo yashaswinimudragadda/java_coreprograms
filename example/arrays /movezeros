@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] number = {0, 1, 0, 3, 12};
+        int insetpos = 0;
+
+        // Shift non-zeroes to the front
+        for (int n : number) {
+            if (n != 0) {
+                number[insetpos++] = n;
+            }
+        }
+
+        // Fill the rest with zeroes
+        while (insetpos < number.length) {
+            number[insetpos++] = 0;
+        }
+
+        // Print the result correctly
+        for (int x : number) {
+            System.out.print(x + " "); 
+        }
+    }
+}
