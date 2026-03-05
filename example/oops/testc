@@ -1,0 +1,59 @@
+package programs;
+import java.util.*;  // method overloading exaaple here the method with same signature but different in the count,and also done through different in datatypes,parameters.
+class Bird{
+	int types;
+	float weight;  // we can perform method overloading in constructors and also with in normal classes like this.
+	String color;
+	boolean flag;
+	
+	
+	
+	void fly() {
+		System.out.println("birds fly in the sky");
+	}
+	
+	
+	
+	
+	void dispaly(
+	float weight,
+	String color,
+	boolean flag) {
+	
+		this.weight=weight;
+		this.color=color;
+		this.flag=flag;
+		System.out.println("\t"+weight+"\t"+color+"\t"+flag);
+		
+	}
+	
+	
+	
+	void dispaly(int types,
+	float weight,
+	String color,
+	boolean flag) {
+		this.types=types;
+		this.weight=weight;
+		this.color=color;
+		this.flag=flag;
+		System.out.println(types+"\t"+weight+"\t"+color+"\t"+flag);
+		
+	}
+}
+public class Test {
+	public static void main(String args[]) {
+		Bird obj = new Bird();
+		obj.fly();
+		obj.types=3;
+		obj.weight=333.22f;
+		obj.color="red";
+		obj.flag=true;
+		System.out.println(obj.types+"\t"+obj.weight+"\t"+obj.color+"\t"+obj.flag);
+		obj.dispaly(4, 33.22f,"green", true);
+		obj.fly();
+		obj.dispaly( 33.22f,"green", true);
+		
+	}
+
+}
