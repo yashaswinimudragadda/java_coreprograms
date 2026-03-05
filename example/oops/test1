@@ -1,0 +1,15 @@
+package programs;
+import java.util.*;
+class Bird{
+	void fly() {
+		System.out.println("birds fly in the sky");
+	}
+}
+public class Test {
+	public static void main(String args[]) {
+		Bird obj = new Bird();
+		obj.fly();
+		
+	}
+
+}
