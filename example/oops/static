@@ -1,0 +1,37 @@
+package programs;
+import java.util.*; // constructor share same name with their class  , no return types,two (default,parameterized)
+
+class Myclaci{
+	int a;
+	int b;
+	Myclaci() {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter a: ");
+		a=sc.nextInt();
+		System.out.println("enter b: ");
+		b=sc.nextInt();
+	}
+	
+	Myclaci(int a,int b) {
+		this.a=a;
+		this.b=b;
+		System.out.println("value of the a="+this.a);
+		System.out.println("value of the b= "+this.b);
+	}
+	static void mysum(int a,int b) {
+		int sum=a+b;
+		System.out.println("sum of the numbers:"+sum);
+	}
+}
+public class Test {
+	public static void main(String args[]) {
+		
+	Myclaci mc= new Myclaci();
+	int valuea=mc.a;
+	int valueb= mc.b;
+	Myclaci mc1= new Myclaci(valuea,valueb);
+   Myclaci.mysum(valuea,valueb);
+		
+	}
+
+}
