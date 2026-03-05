@@ -1,0 +1,43 @@
+package programs;
+import java.util.*;  // method overloading exaaple here the method with same signature but different in the count,and also done through different in datatypes,parameters.
+class Books{
+	int bno;
+	String bname;
+	float bprice;
+	void bdet() {
+		System.out.println("book no:"+bno);
+		System.out.println("Book Name: "+bname);
+		System.out.println("Book price: "+bprice);
+	}
+	void bdet(int bn,String bna) {
+		bno=bn;
+		bname=bna;
+		System.out.println("book no: "+bno);
+		System.out.println("book name: "+bname);
+		
+	}
+	
+	void bdet(int bn,String bna,float bp) {
+		bno=bn;
+		bname=bna;
+		bprice=bp;
+		System.out.println("book no: "+bno);
+		System.out.println("book name:"+bname);
+		System.out.println("book price: "+bp);
+		
+	}
+}
+public class Test {
+	public static void main(String args[]) {
+		
+		Books b=new Books();
+		b.bno=1;
+		b.bname="java";
+		b.bprice=345.432f;
+		b.bdet();
+		b.bdet(2,"unix");
+		b.bdet(3,"python",456.34f);
+		
+	}
+
+}
