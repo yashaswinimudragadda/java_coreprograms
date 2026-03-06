@@ -1,0 +1,48 @@
+package programs;
+ class Mysum{
+	 int a;
+	 int b;
+	 Mysum(int a, int b){
+		 this.a=a;
+		 this.b=b;
+	 }
+	 void display() {
+		 System.out.println("sum of the values: "+(this.a+this.b));
+	 }
+ }
+ 
+ interface Mysub{
+	 void display2(int a,int b);
+ }
+ interface Mydivision{
+	 void display3(int a,int b);
+ }
+ 
+ class Operations extends Mysum implements Mysub,Mydivision{
+	 Operations(int a,int b){
+		 super(a, b);
+	 }
+	 
+	 @Override
+	 public void display2(int a, int b){
+		 int sub=a-b;
+		 System.out.println("mysubtraction: "+sub);
+	 }
+	 @Override
+	 public void display3(int a, int b) {
+		 float division = a/b;
+		 System.out.println("mydivision: "+division);
+	 }
+ }
+ 
+
+
+class Test {
+    public static void main(String args[]) {
+    	Operations obj=new Operations(2,2);
+    	obj.display();
+    	obj.display2(3, 2);
+    	obj.display3(1, 1);
+        
+    }
+}
