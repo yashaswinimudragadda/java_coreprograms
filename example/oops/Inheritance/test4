@@ -1,0 +1,54 @@
+package programs;
+
+// Parent Class
+class Emp {
+    int eno;
+    String ename;
+    Emp(int eno, String ename) {
+        this.eno = eno;
+        this.ename = ename;
+    }
+}
+
+// Interface 1
+interface Department {
+    void showDept(int id, String name);
+}
+
+// Interface 2
+interface FoodService {
+    void showMenu(int couponId, String item);
+}
+
+// This class "Inherits" from 1 class and 2 interfaces
+class EmployeeDetails extends Emp implements Department, FoodService {
+    
+    EmployeeDetails(int eno, String ename) {
+        super(eno, ename);
+    }
+
+    @Override
+    public void showDept(int id, String name) {
+        System.out.println("Dept ID: " + id + " | Name: " + name);
+    }
+
+    @Override
+    public void showMenu(int couponId, String item) {
+        System.out.println("Coupon: " + couponId + " | Item: " + item);
+    }
+    
+    void displayAll() {
+        System.out.println("Employee: " + ename + " (ID: " + eno + ")");
+    }
+}
+
+class Test {
+    public static void main(String args[]) {
+        EmployeeDetails ed = new EmployeeDetails(101, "Anil");
+        
+        // Now you can call everything from ONE object!
+        ed.displayAll();
+        ed.showDept(10, "Sales");
+        ed.showMenu(1332, "Dosa");
+    }
+}
