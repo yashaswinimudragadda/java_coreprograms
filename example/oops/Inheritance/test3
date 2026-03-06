@@ -1,0 +1,63 @@
+
+// hierarchical inheritance(Hierarchical,Emp → Dept AND Emp → Food,No (They are separate branches))
+
+package programs;
+
+import java.lang.*;
+class Emp{
+    int eno;
+    String ename;
+    double esal;
+    char egrade;
+    Emp(int eno,String ename, double esal,char egrade){
+        this.eno=eno;
+        this.ename=ename;
+        this.esal=esal;
+        this.egrade=egrade;
+        
+    }
+}
+class Dept extends Emp
+{
+    int deptno;
+     String deptname;
+     Dept(int eno,String ename,double esal, char egrade, int deptno,String deptname){
+         super(eno,ename,esal,egrade);
+         this.deptno=deptno;
+         this.deptname=deptname;
+     }
+     void displayvalues(){
+         System.out.println(
+             "Eno: "+eno+"\t"+"Ename: "+"\t"+"Esal: "+"\t"+
+             "Egrade: "+egrade+"\t"+"Deptno="+deptno+"\t"+"Deptname="+deptname);
+
+     }
+     
+}
+
+class Headquarters extends Emp{
+	int hqid;
+	String hqname;
+	
+	Headquarters(int eno,String ename,double esal, char egrade,int hqid,String hqname){
+		super(eno,ename,esal,egrade);
+		this.hqid=hqid;
+		this.hqname=hqname;
+	}
+	void displayhq() {
+		System.out.println( "Eno: "+eno+"\t"+"Ename: "+"\t"+"Esal: "+"\t"+
+             "Egrade: "+egrade+"\t"+"Headquarters id: "+"\t"+hqid+"\t"+hqname);
+	}
+}
+
+class Test{
+    public static void main(String args[]){
+        Dept D= new Dept(101,"anil",43356.65,'A',1,"Manager");
+        D.displayvalues();
+        
+        Headquarters hq= new Headquarters(101,"anil",43356.65,'A',102,"MTM");
+        hq.displayhq();
+        
+    }
+}
+     
