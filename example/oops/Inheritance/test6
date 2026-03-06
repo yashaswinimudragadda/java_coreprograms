@@ -1,0 +1,44 @@
+package programs;
+ 
+abstract class Mathbase{
+	int a,b;
+	Mathbase(int a, int b){
+		this.a=a;
+		this.b=b;
+	}
+	void displaySum() {
+        System.out.println("Sum of the values: " + (this.a + this.b));
+    }
+	void displaySum(float a, float b) {
+        System.out.println("Sum of the values: " + (this.a + this.b));
+    }
+	abstract void display1(int x, int y);
+	abstract void display2(int p, int q);
+}
+
+class Operators extends Mathbase{
+	Operators(int a, int b){
+		super(a,b);
+		displaySum();
+	}
+	
+	@Override
+	public void display1(int x,int y) {                           // method: override
+		System.out.println(" operation1: "+(x-y));
+	}
+	@Override
+	public void display2(int p,int q) {
+		System.out.println(" operation2: "+(p%q));
+	}
+}
+
+class Test {
+    public static void main(String args[]) {
+    	Operators obj=new Operators(2,2);
+    	obj.displaySum();
+    	obj.display1(3, 2);
+    	obj.display2(1, 1);
+    	obj.displaySum(1.22f,3.44f);//method:overloading 
+        
+    }
+}
