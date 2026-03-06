@@ -23,3 +23,17 @@ public class test
 
     }
 }
+
+
+class Main {
+    public static void main(String[] args) {
+        String n="001";
+        String rev=" ";
+        int s=n.length();
+        for(int i=s-1;i>=0;i--)
+        {
+            rev=rev+n.charAt(i);
+        }
+        System.out.println(rev);
+    }
+}
