@@ -1,0 +1,81 @@
+// Multilevel  inheritance program with constructors involved
+
+package programs;
+
+import java.lang.*;
+class Emp{
+    int eno;
+    String ename;
+    double esal;
+    char egrade;
+    Emp(int eno,String ename, double esal,char egrade){
+        this.eno=eno;
+        this.ename=ename;
+        this.esal=esal;
+        this.egrade=egrade;
+        
+    }
+}
+class Dept extends Emp
+{
+    int deptno;
+     String deptname;
+     Dept(int eno,String ename,double esal, char egrade, int deptno,String deptname){
+         super(eno,ename,esal,egrade);
+         this.deptno=deptno;
+         this.deptname=deptname;
+     }
+     void displayvalues(){
+         System.out.println(
+             "Eno: "+eno+"\t"+"Ename: "+"\t"+"Esal: "+"\t"+
+             "Egrade: "+egrade+"\t"+"Deptno="+deptno+"\t"+"Deptname="+deptname);
+
+     }
+     
+}
+
+class Headquarters extends Dept{
+	int hqid;
+	String hqname;
+	
+	Headquarters(int eno,String ename,double esal, char egrade,int deptno,String deptname,int hqid,String hqname){
+		super(eno,ename,esal,egrade,deptno,deptname);
+		this.hqid=hqid;
+		this.hqname=hqname;
+	}
+	void displayhq() {
+		System.out.println( "Eno: "+eno+"\t"+"Ename: "+"\t"+"Esal: "+"\t"+
+             "Egrade: "+egrade+"\t"+"Deptno="+deptno+"\t"+"Deptname="+deptname+"Headquarters id: "+"\t"+hqid+"\t"+hqname);
+	}
+}
+
+class Test{
+    public static void main(String args[]){
+        Dept D= new Dept(101,"anil",43356.65,'A',1,"Manager");
+        D.displayvalues();
+        
+        Headquarters hq= new Headquarters(101,"anil",43356.65,'A',1,"Manager",102,"MTM");
+        hq.displayhq();
+        
+    }
+}
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
