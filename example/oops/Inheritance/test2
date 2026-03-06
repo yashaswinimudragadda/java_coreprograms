@@ -1,3 +1,9 @@
+Type,Structure,Can Food access Dept methods?
+Hierarchical,Emp → Dept AND Emp → Food,No (They are separate branches)
+Multilevel,Emp → Dept → Food,Yes (It's a continuous chain)
+Multiple,Emp + Dept → Food,No (Java does not support this with classes)
+
+
 // Multilevel  inheritance program with constructors involved
 
 package programs;
