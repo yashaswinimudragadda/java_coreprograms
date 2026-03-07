@@ -1,0 +1,20 @@
+class Test{
+    public static void main(String args []){
+        String n="hhhh";
+        String temp=n;
+        String rev="";
+        int s=n.length();
+        int i=0;
+        while(s>i){
+            rev=n.charAt(i)+rev;
+            i++;
+        }
+        System.out.println("===checking parlindrome String or not===");
+        if(temp==n){
+            System.out.println(rev+ " is a parlindrome.");
+        }
+        else{
+            System.out.println("is not a parlindrome.");
+        }
+    }
+}
