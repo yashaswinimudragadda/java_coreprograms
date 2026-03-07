@@ -1,0 +1,24 @@
+class Test{
+    public static void main(String args[]){
+        int n=1234;
+        String m="0000";
+        int i=0;
+        
+        String str1=Integer.toString(n);
+        
+        
+        int s1=str1.length();
+        int s2=m.length();
+        
+        if(s1!=s2){
+            System.out.println("the both inputs should be in the same length");
+        }
+        else{
+            while(s1>i){
+                System.out.print(str1.charAt(i));
+                System.out.print(m.charAt(i));
+                i++;
+            }
+        }
+    }
+}
