@@ -1,0 +1,13 @@
+class Test{
+    public static void main(String args[]){
+        String n="001";
+        String rev="";
+        int s= n.length();
+        int i=0;
+        while(s>i){
+            rev=n.charAt(i)+rev;
+            i++;
+        }
+        System.out.println(rev);
+    }
+}
