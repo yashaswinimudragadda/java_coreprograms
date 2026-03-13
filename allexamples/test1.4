@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+class Test{
+    //arraylist null values are expected and duplicated values are appected.
+    public static void main(String args[]){
+        ArrayList<String> at = new ArrayList<String>();
+        at.add("books");
+        at.add("eraser");
+        at.add("pen");
+        at.add("pencil");
+        at.add("helloworld");
+        System.out.println(at);
+        System.out.println(at.size());
+        at.add("apple");
+        at.add("java problems");
+        at.add(null);
+        System.out.println(at);
+        System.out.println(at.size());
+        at.add("uncle");
+        at.add("aunt");
+        at.add("scale");
+        System.out.println(at);
+        System.out.println(at.size());
+        at.add("apple");
+        at.add(null);
+        at.add(" ");
+        at.add("grapes");
+        System.out.println(at);
+        System.out.println(at.size());
+        
+    }
+}
