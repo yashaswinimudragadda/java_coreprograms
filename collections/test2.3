@@ -1,0 +1,22 @@
+package programs;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+
+class Test{
+	public static void main (String args []) {
+		ArrayList companies = new ArrayList();
+		companies.add("sony");
+		companies.add("samsung");
+		companies.add("microsoft");
+		companies.add("intel");
+		companies.add("sony");
+		
+		System.out.println("Size of ArrayList before conversion : "+companies.size());
+		System.out.println(companies);
+		
+		HashSet companySet = new HashSet(companies);
+		System.out.println("size of hashset after conversion: "+companies.size());
+		System.out.println(companySet);
+	}
+}
