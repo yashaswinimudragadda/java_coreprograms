@@ -1,0 +1,23 @@
+package programs;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+
+class Test{
+	
+	public static void main(String [] args) {
+		ArrayList<Integer> at = new ArrayList<Integer>();
+		
+		at.add(34);
+		at.add(12);
+		at.add(45);
+		at.add(23);
+		at.add(54);
+		
+		Enumeration<Integer> e = Collections.enumeration(at);
+		
+		while(e.hasMoreElements()) {
+			System.out.println(e.nextElement());
+		}
+	}
+}
